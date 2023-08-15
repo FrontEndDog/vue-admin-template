@@ -1,0 +1,26 @@
+/* stylelint-disable property-no-unknown */
+/* stylelint-disable selector-pseudo-class-no-unknown */
+
+// sidebar
+$menu-text: #bfcbd9;
+$menu-active-text: #409eff;
+$sub-menu-active-text: #f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+
+$menu-bg: #304156;
+$menu-hover: #263445;
+$sub-menu-bg: #1f2d3d;
+$sub-menu-hover: #001528;
+$side-bar-width: 210px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menu-text;
+  menuActiveText: $menu-active-text;
+  subMenuActiveText: $sub-menu-active-text;
+  menuBg: $menu-bg;
+  menuHover: $menu-hover;
+  subMenuBg: $sub-menu-bg;
+  subMenuHover: $sub-menu-hover;
+  sideBarWidth: $side-bar-width;
+}

@@ -1,15 +1,15 @@
-@import './variables.scss';
-@import './mixin.scss';
-@import './transition.scss';
-@import './element-ui.scss';
-@import './sidebar.scss';
+@import './variables.module';
+@import './mixin';
+@import './transition';
+@import './element-ui';
+@import './sidebar';
 
 body {
   height: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  text-rendering: optimizelegibility;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
 }
 
 label {
@@ -17,8 +17,8 @@ label {
 }
 
 html {
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
 }
 
 #app {
@@ -26,9 +26,17 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:focus,
@@ -36,26 +44,18 @@ a:active {
   outline: none;
 }
 
-a,
-a:focus,
-a:hover {
-  cursor: pointer;
-  color: inherit;
-  text-decoration: none;
-}
-
 div:focus {
   outline: none;
 }
 
 .clearfix {
-  &:after {
-    visibility: hidden;
+  &::after {
     display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
     height: 0;
+    clear: both;
+    font-size: 0;
+    visibility: hidden;
+    content: ' ';
   }
 }
 

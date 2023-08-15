@@ -6,7 +6,7 @@
 }
 
 .el-upload {
-  input[type="file"] {
+  input[type='file'] {
     display: none !important;
   }
 }
@@ -15,13 +15,12 @@
   display: none;
 }
 
-
 // to fixed https://github.com/ElemeFE/element/issues/2461
 .el-dialog {
-  transform: none;
-  left: 0;
   position: relative;
+  left: 0;
   margin: 0 auto;
+  transform: none;
 }
 
 // refine element ui upload
@@ -39,7 +38,7 @@
 // dropdown
 .el-dropdown-menu {
   a {
-    display: block
+    display: block;
   }
 }
 

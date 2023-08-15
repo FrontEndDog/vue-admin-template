@@ -14,12 +14,12 @@ export default {
   props: {
     iconClass: {
       type: String,
-      required: true
+      required: true,
     },
     className: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   computed: {
     isExternal() {
@@ -38,10 +38,10 @@ export default {
     styleExternalIcon() {
       return {
         mask: `url(${this.iconClass}) no-repeat 50% 50%`,
-        '-webkit-mask': `url(${this.iconClass}) no-repeat 50% 50%`
+        '-webkit-mask': `url(${this.iconClass}) no-repeat 50% 50%`,
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -49,14 +49,14 @@ export default {
 .svg-icon {
   width: 1em;
   height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
   overflow: hidden;
+  vertical-align: -0.15em;
+  fill: currentcolor;
 }
 
 .svg-external-icon {
-  background-color: currentColor;
-  mask-size: cover!important;
   display: inline-block;
+  background-color: currentcolor;
+  mask-size: cover !important;
 }
 </style>
